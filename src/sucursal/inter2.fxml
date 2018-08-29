@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="sucursal.Inter2Controller">
+   <children>
+      <VBox layoutX="14.0" layoutY="14.0" prefHeight="371.0" prefWidth="571.0">
+         <children>
+            <HBox alignment="BASELINE_CENTER" prefHeight="69.0" prefWidth="571.0">
+               <children>
+                  <Label text="ADMINISTRADOR">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="80.0" prefWidth="571.0">
+               <children>
+                  <Button fx:id="dineroEnCaja" mnemonicParsing="false" onAction="#Dinero_Caja" text="Dinero En Caja">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="73.0" prefWidth="571.0">
+               <children>
+                  <Button fx:id="reportes" mnemonicParsing="false" onAction="#Ir_Vista_Reportes" text="Reportes">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="74.0" prefWidth="571.0">
+               <children>
+                  <Button fx:id="inventario" mnemonicParsing="false" onAction="#Ir_Vista_Inventario" text="Inventario">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="salir" mnemonicParsing="false" onAction="#Volver" text="Salir" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

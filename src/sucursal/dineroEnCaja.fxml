@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sucursal.DineroEnCajaController">
+   <children>
+      <VBox layoutX="14.0" layoutY="14.0" prefHeight="375.0" prefWidth="571.0">
+         <children>
+            <HBox alignment="BASELINE_CENTER" prefHeight="105.0" prefWidth="571.0">
+               <children>
+                  <Label text="Dinero en Caja">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="65.0" prefWidth="571.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="65.0" text="Id: " />
+                  <TextField fx:id="id_caja" prefHeight="25.0" prefWidth="79.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="571.0" spacing="100.0">
+               <children>
+                  <Button fx:id="mostrar" mnemonicParsing="false" onAction="#Mostrar_Dinero" text="Mostrar">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="salir" mnemonicParsing="false" onAction="#Salir" text="Salir">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="total" prefHeight="25.0" prefWidth="204.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

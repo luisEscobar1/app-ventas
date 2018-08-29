@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="458.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sucursal.FactController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="453.0" prefWidth="624.0">
+         <children>
+            <VBox layoutX="14.0" layoutY="14.0" prefHeight="426.0" prefWidth="595.0">
+               <children>
+                  <HBox alignment="BASELINE_CENTER" prefHeight="61.0" prefWidth="576.0">
+                     <children>
+                        <Label text="FACTURA">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="58.0" prefWidth="576.0" spacing="100.0">
+                     <children>
+                        <TextField fx:id="buscador" prefHeight="26.0" prefWidth="283.0" />
+                        <Button fx:id="buscar" mnemonicParsing="false" onAction="#Buscar_f" prefHeight="28.0" prefWidth="68.0" text="Buscar" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="263.0" prefWidth="617.0">
+                     <children>
+                        <TextArea fx:id="area_fact" prefHeight="263.0" prefWidth="595.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_RIGHT" prefHeight="38.0" prefWidth="576.0" spacing="35.0">
+                     <children>
+                        <Button fx:id="generar" mnemonicParsing="false" onAction="#Generar_f" prefHeight="29.0" prefWidth="70.0" text="Generar" />
+                        <Button fx:id="salir" mnemonicParsing="false" onAction="#Volver_caj" prefHeight="30.0" prefWidth="57.0" text="Salir" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

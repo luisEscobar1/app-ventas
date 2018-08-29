@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sucursal.Registro2Controller">
+   <children>
+      <VBox layoutX="54.0" layoutY="17.0" prefHeight="362.0" prefWidth="503.0">
+         <children>
+            <HBox alignment="BASELINE_CENTER" prefHeight="62.0" prefWidth="503.0">
+               <children>
+                  <Label text="REGISTRO">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="34.0" prefWidth="503.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="82.0" text="Nombre: " />
+                  <TextField fx:id="nombre" prefHeight="25.0" prefWidth="190.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="503.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="83.0" text="Apellido: " />
+                  <TextField fx:id="apellido" prefHeight="25.0" prefWidth="188.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="503.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="84.0" text="Id: " />
+                  <TextField fx:id="id" prefHeight="25.0" prefWidth="188.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="37.0" prefWidth="503.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="83.0" text="Usuario: " />
+                  <TextField fx:id="usuario" prefHeight="25.0" prefWidth="187.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="52.0" prefWidth="503.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="84.0" text="Clave: " />
+                  <TextField fx:id="clave" prefHeight="25.0" prefWidth="187.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="46.0" prefWidth="503.0">
+               <children>
+                  <CheckBox fx:id="vendedor" mnemonicParsing="false" onAction="#checkEvent" prefHeight="17.0" prefWidth="121.0" text="Vendedor" />
+                  <CheckBox fx:id="administrador" mnemonicParsing="false" onAction="#checkEvent" text="Administrador" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="64.0" prefWidth="503.0" spacing="50.0">
+               <children>
+                  <Button fx:id="guardar" mnemonicParsing="false" onAction="#guardar_registro" text="Guardar" />
+                  <Button fx:id="Salir" mnemonicParsing="false" onAction="#Salir" text="Salir" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

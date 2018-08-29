@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox focusTraversable="true" layoutX="80.0" layoutY="54.0" prefHeight="316.0" prefWidth="438.0">
+         <children>
+            <HBox focusTraversable="true" prefHeight="37.0" prefWidth="438.0">
+               <children>
+                  <Label prefHeight="24.0" prefWidth="68.0" text="Nombre: " />
+                  <TextField fx:id="nombre" prefHeight="25.0" prefWidth="200.0" />
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </opaqueInsets>
+            </HBox>
+            <HBox prefHeight="36.0" prefWidth="438.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="68.0" text="Apellido: " />
+                  <TextField fx:id="apellido" prefHeight="25.0" prefWidth="202.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="37.0" prefWidth="438.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="68.0" text="Id: " />
+                  <TextField fx:id="id" prefHeight="25.0" prefWidth="201.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="37.0" prefWidth="438.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="66.0" text="Usuario: " />
+                  <TextField fx:id="usuario" prefHeight="25.0" prefWidth="203.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="61.0" prefWidth="438.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="65.0" text="Clave: " />
+                  <TextField fx:id="clave" prefHeight="25.0" prefWidth="202.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="91.0" prefWidth="438.0">
+               <children>
+                  <CheckBox fx:id="vendedor" mnemonicParsing="false" prefHeight="17.0" prefWidth="117.0" text="Vendedor" />
+                  <CheckBox fx:id="administrador" mnemonicParsing="false" text="Administrador" />
+               </children>
+            </HBox>
+            <Button fx:id="guardar" mnemonicParsing="false" onAction="#handleButtong" text="Guardar" />
+         </children>
+         <opaqueInsets>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </opaqueInsets>
+      </VBox>
+   </children>
+</AnchorPane>
